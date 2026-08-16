@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "description": "SYNTHETIC example knowledge graph — fictional data. Replace with your own generated graph.",
+    "last_updated": "2024-01-01",
+    "decision_receipt": "dr-example-001",
+    "dewy_tag": ["example", "synthetic"],
+    "folksonomy": ["example-run", "demo"]
+  },
+  "nodes": [
+    {
+      "id": "node-001",
+      "type": "decision",
+      "path": "examples/decision-001.md",
+      "dewey_codes": ["650", "153"],
+      "dewy_run": "dr-example-001",
+      "folksonomy": ["demo", "example-run"],
+      "nci_score": 62,
+      "source_grade": "B",
+      "version": "0.1.0",
+      "last_updated": "2024-01-01"
+    }
+  ],
+  "edges": [
+    { "source": "node-001", "target": "node-001", "relationship": "self", "label": "example" }
+  ],
+  "decision_receipts": [
+    {
+      "id": "dr-example-001",
+      "date": "2024-01-01",
+      "question": "Which of three synthetic options best fits the example horizon?",
+      "true_north": "Ship the smallest reversible bet that proves the demand signal.",
+      "mode": "STANDARD",
+      "clarity_mode": "SHARP",
+      "stakes": "moderate",
+      "horizon": "this quarter",
+      "outcome": "example",
+      "rationale": "Fictional rationale for the synthetic example run.",
+      "macros_used": ["DEWY"]
+    }
+  ],
+  "tag_cloud": {
+    "example-run": 3,
+    "demo": 2,
+    "dewy": 2,
+    "decision-receipts": 1,
+    "data-model": 1,
+    "folksonomy": 1
+  }
+}
